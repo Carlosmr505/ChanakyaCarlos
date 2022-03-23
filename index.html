@@ -9,8 +9,9 @@
 
   <body>
     <h1 id="title">freeCodeCamp Survey Form</h1>
-    <h2 id="description">Thank you for taking the time to help us improve the platform</h2>
+    <h4 id="description">Thank you for taking the time to help us improve the platform</h4>
     <form action="index.html" method="post" enctype="multipart/form-data" id="survey-form">
+
       <fieldset class="form-background">
         <label for="name">Name</label><br>
         <input type="text" id="name" name="user_fullName" placeholder="Enter your name" required><br><br>
@@ -21,7 +22,7 @@
         <label for="age">Age (optional)</label><br>
         <input type="number" id="age" name="user_age" placeholder="Age"><br><br>
 
-        <p>Which option best describes your current role?</p><br>
+        <p>Which option best describes your current role?</p>
         <select name="roles" id="dropdown" required>
           <option value="" disabled selected hidden>Select current role</option>
           <option value="student">Student</option>
@@ -31,18 +32,18 @@
           <option value="other">Other</option>
         </select><br><br>
 
-        <p>Would you recommend freeCodeCamp to a friend?</p><br>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
         <label>
-        <input type="radio" id="definitely" name="user_definite">Definitely<br>
+        <input type="radio" id="definitely" name="user_recommend">Definitely<br>
         </label>
         <label>
-        <input type="radio" id="maybe" name="user_maybe">Maybe<br>
+        <input type="radio" id="maybe" name="user_recommend">Maybe<br>
         </label>
         <label>
-        <input type="radio" id="notSure" name="user_notSure">Not sure
+        <input type="radio" id="notSure" name="user_recommend">Not sure
         </label><br><br>
 
-        <p>What is your favourite feature of freeCodeCamp?</p><br>
+        <p>What is your favourite feature of freeCodeCamp?</p>
         <select name="features" id="dropdown" required>
           <option disabled selected hidden>Select an option</option>
           <option value="challenges">Challenges</option>
@@ -51,7 +52,7 @@
           <option value="openSource">Open Source</option>
         </select><br><br>
 
-        <p>What would you like to see improved?</p><span>(Check all that apply)</span><br>
+        <p>What would you like to see improved? (Check all that apply)</p>
         <label>
           <input type="checkbox" name="likes" value="front-end-projects">Front-end Projects<br>
         </label>
@@ -84,13 +85,14 @@
         </label>
         <label>
           <input type="checkbox" name="likes" value="additional-courses">Additional Courses<br>
-        </label><br><br>
-     
+        </label>
 
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" name="userComment" placeholder="Enter your comment here..." maxlength="250" cols="50" rows="5"></textarea><br><br>
 
-
-        
+        <button class="submit-button">Submit</button>        
       </fieldset>
+
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 

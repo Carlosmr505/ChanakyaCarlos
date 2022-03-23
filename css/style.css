@@ -1,0 +1,19 @@
+.form-background {
+    background-color: #002147;
+    text-align: left;
+    width: 50px;
+    }
+
+body {
+    text-align: center;
+    color: white;
+    background-color: #665C84;    
+}
+
+.submit-button {
+    color: white;
+}
+
+div {
+    align-content: center;
+}
